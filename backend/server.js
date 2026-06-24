@@ -14,6 +14,9 @@ app.get('/', (req, res) => {
   res.json({ status: 'BFHL API is running ✅', endpoint: 'POST /bfhl' });
 });
 
-app.listen(PORT, () => {
-  console.log(`BFHL API running at http://localhost:${PORT}`);
-});
+if (process.env.NODE_ENV !== 'production') {
+  app.listen(PORT, () => {
+    console.log(`BFHL API running at http://localhost:${PORT}`);
+  });
+}
+module.exports = app;
