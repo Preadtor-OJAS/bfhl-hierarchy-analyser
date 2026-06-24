@@ -4,7 +4,7 @@ import SummaryPanel from './components/SummaryPanel';
 import ThemeToggle from './components/ThemeToggle';
 import './index.css';
 
-const API_BASE = import.meta.env.VITE_API_URL || 'https://bfhl-backend-l2az.onrender.com';
+const API_BASE = import.meta.env.VITE_API_URL || 'https://bfhl-hierarchy-analyser-zani.vercel.app';
 
 const EXAMPLE = `A->B, A->C, B->D, C->E, E->F,
 X->Y, Y->Z, Z->X,
