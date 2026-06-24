@@ -4,7 +4,7 @@ import SummaryPanel from './components/SummaryPanel';
 import ThemeToggle from './components/ThemeToggle';
 import './index.css';
 
-const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:3000';
+const API_BASE = import.meta.env.VITE_API_URL || 'https://bfhl-backend-l2az.onrender.com';
 
 const EXAMPLE = `A->B, A->C, B->D, C->E, E->F,
 X->Y, Y->Z, Z->X,
